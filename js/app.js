@@ -77,14 +77,18 @@ document.getElementById('premium-delivery').addEventListener('click', function (
 
 //Promo Code Apply
 document.getElementById('promo-btn').addEventListener('click', function () {
-    const promoInput = document.getElementById('promo-input').value;
+    const promoInput = document.getElementById('promo-input');
+    const promoInputValue = promoInput.value;
     let finalTotal = document.getElementById('final-total');
     let finalTotalPrice = parseFloat(finalTotal.innerText);
 
-    if (promoInput.toLowerCase() == 'stevekaku') {
+    if (promoInputValue.toLowerCase() == 'stevekaku') {
         const totalAfterDiscount = (finalTotalPrice / 100) * 80;
         finalTotal.innerText = totalAfterDiscount;
+        promoInput.value = '';
     } else {
         alert("Code Doesn't Match");
+        promoInput.value = '';
     }
+
 });
