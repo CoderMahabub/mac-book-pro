@@ -83,6 +83,8 @@ th, td {
 }
 .promo input[type=text]{
     padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 600;
 }
 .promo button{
 background-color:red;
