@@ -25,6 +25,11 @@ button:focus{
     border: 3px solid #000;
     
 }
+button:hover{
+    background-color:#000;
+    color: #fff;
+    border: 3px solid #000;
+}
 .container {
     width: 85%;
     margin:40px auto;
