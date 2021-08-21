@@ -51,12 +51,12 @@ button:hover{
     background-color:white;
     float: left;
 }
-h1{
+.product-title{
     font-size: 40px;
     margin: 0;
     font-weight: 600;
 }
-p{
+.product-description{
     font-size: 16px;
 }
 /* Category part Starts Here  */
@@ -86,21 +86,25 @@ th, td {
 .promo{
       margin-top: 30px;
 }
+.promo-title{
+    margin-bottom: 0;
+    font-size: 14px;
+}
 .promo input[type=text]{
     padding: 5px 10px;
     font-size: 18px;
     font-weight: 600;
 }
 .promo button{
-background-color:red;
-color: #fff;
-border: 3px solid red;
+    background-color:red;
+    color: #fff;
+    border: 3px solid red;
 }
-h5{
-    margin-bottom: 0;
-    font-size: 14px;
+
+/*Total Section After Discount*/
+hr{
+    color: grey;
 }
-/*Total Section*/
-h2{
+.final-total{
     text-align: center;
 }
