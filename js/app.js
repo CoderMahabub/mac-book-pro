@@ -99,7 +99,7 @@ document.getElementById('promo-btn').addEventListener('click', function () {
         finalPrice.innerText = totalAfterDiscount;
         promoInput.value = '';
     } else {
-        alert("Please Provide a Valid Promo Code ");
+        alert("Please Provide a Valid Promo Code.");
         promoInput.value = '';
     }
 });

@@ -58,6 +58,7 @@ button:hover{
 }
 .product-description{
     font-size: 16px;
+    text-align: justify;
 }
 /* Category part Starts Here  */
 .category{
