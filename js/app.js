@@ -96,7 +96,7 @@ document.getElementById('promo-btn').addEventListener('click', function () {
         finalPrice.innerText = totalAfterDiscount;
 
         //To show round figure after 20% discount
-        finalPrice.innerText = Math.round(totalAfterDiscount);
+        finalPrice.innerText = totalAfterDiscount;
         promoInput.value = '';
     } else {
         alert("Please Provide a Valid Promo Code ");
