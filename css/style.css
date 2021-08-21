@@ -32,7 +32,7 @@ button:hover{
 }
 .container {
     width: 85%;
-    margin:40px auto;
+    margin:40px auto 0 auto;
 }
 
 /* Main Section Starts Here  */
@@ -74,14 +74,20 @@ table{
     margin-top: 30px;
 }
 table, th, td {
-    border: 1px solid black;
     border-collapse: collapse;
     font-weight: 600;
+}
+table tr{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.2);
+}
+.black-border{
+    border-bottom: 2px solid black;
 }
 th, td {
     padding: 5px;
     text-align: left;
 }
+
 /* Promo Division Starts Here */
 .promo{
       margin-top: 30px;
@@ -94,6 +100,7 @@ th, td {
     padding: 5px 10px;
     font-size: 18px;
     font-weight: 600;
+    text-align: center;
 }
 .promo button{
     background-color:red;

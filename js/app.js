@@ -39,39 +39,39 @@ function getOneEightyCost(product) {
     calculateTotal();
 };
 
-//click Handler for memory-8gb
+// Get Price for memory-8gb
 document.getElementById('memory-8gb').addEventListener('click', function () {
     getZeroCost('memory');
 });
 
-//click Handler for memory-16gb
+// Get Price for memory-16gb
 document.getElementById('memory-16gb').addEventListener('click', function () {
     getOneEightyCost('memory');
 });
 
-//Click Handler for storage-256gb
+// Get Storage-256gb Price
 document.getElementById('storage-256gb').addEventListener('click', function () {
     getZeroCost('storage');
 });
 
-//Click Handler for storage-256gb
+// Get Storage-256gb Price
 document.getElementById('storage-512gb').addEventListener('click', function () {
     const storageCost = document.getElementById('storage-cost');
     storageCost.innerText = 100;
     calculateTotal();
 });
 
-//Click Handler for storage-1tb
+// Get Storage-1tb Price
 document.getElementById('storage-1tb').addEventListener('click', function () {
     getOneEightyCost('storage');
 });
 
-//Click Handler for Delivery Charge
+// Get Delivery Charge of 0$
 document.getElementById('free-delivery').addEventListener('click', function () {
     getZeroCost('delivery');
 });
 
-//Click Handler for Delivery Charge
+// Get Delivery Charge of 20$
 document.getElementById('premium-delivery').addEventListener('click', function () {
     const deliveryCost = document.getElementById('delivery-cost');
     deliveryCost.innerText = 20;
@@ -99,7 +99,7 @@ document.getElementById('promo-btn').addEventListener('click', function () {
         finalPrice.innerText = Math.round(totalAfterDiscount);
         promoInput.value = '';
     } else {
-        alert("Promo Code Doesn't Match");
+        alert("Please Provide a Valid Promo Code ");
         promoInput.value = '';
     }
 });
